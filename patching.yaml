@@ -1,6 +1,6 @@
 #add naren user to our group
 - name: Patch a host
-  hosts: "main"
+  hosts: *
   gather_facts: false
   tasks:
   - name: run yum updates
