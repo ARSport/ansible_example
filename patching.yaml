@@ -3,5 +3,5 @@
   hosts: all
   tasks:
     - name: Upgrade all packages to the latest version
-      shell: sudo /usr/bin/apt-get upgrade -y
+      shell: yum update -y all
       become: yes
