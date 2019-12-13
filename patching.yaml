@@ -3,5 +3,5 @@
   hosts: all
   tasks:
     - name: Upgrade all packages to the latest version
-      shell: apt-get upgrade
+      shell: /usr/bin/apt-get upgrade
       become: yes
