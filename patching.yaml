@@ -3,8 +3,7 @@
   hosts: "main"
   gather_facts: false
   tasks:
-  - name: run yum updates
-    yum:
-      name: '*'
-      state: latest
-      use_backend: yum
+- name: Upgrade all packages to the latest version
+  apt:
+    name: "*"
+    state: latest
