@@ -3,4 +3,4 @@
   hosts: all
   tasks:
     - name: Upgrade all packages to the latest version
-        shell: apt-get upgrade
+      shell: apt-get upgrade
