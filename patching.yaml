@@ -1,0 +1,10 @@
+#add naren user to our group
+- name: Patch a host
+  hosts: "main"
+  gather_facts: false
+  tasks:
+  - name: run yum updates
+    yum:
+      name: '*'
+      state: latest
+      use_backend: yum
