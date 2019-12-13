@@ -3,5 +3,4 @@
   hosts: all
   tasks:
     - name: Upgrade all packages to the latest version
-      shell: yum update -y all
-      become: yes
+      shell: yum update -y
